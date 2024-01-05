@@ -8,10 +8,10 @@ jobs:
          working-directory: ./app
      steps:
         - name: Checkout
-          uses: actions/checkout@v2.4.2
+          uses: actions/checkout@v4
         - name: Install dependencies
           run: npm install
         - name: Cypress.io
-          uses: cypress-io/github-action@v2.9.7
+          uses: cypress-io/github-action@v6
           with:
              working-directory: ./app
